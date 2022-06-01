@@ -1,0 +1,32 @@
+{
+  "name": "jwt_nodejs",
+  "version": "1.0.0",
+  "description": "jwt authentication in nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzzanKhan/JWT-Authentication-for-MEAN-Stack.git"
+  },
+  "keywords": [
+    "jwt",
+    "nodejs",
+    "express",
+    "mean",
+    "authentication"
+  ],
+  "author": "Azzan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzzanKhan/JWT-Authentication-for-MEAN-Stack/issues"
+  },
+  "homepage": "https://github.com/AzzanKhan/JWT-Authentication-for-MEAN-Stack#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4"
+  }
+}
