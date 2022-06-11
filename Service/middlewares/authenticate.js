@@ -1,4 +1,3 @@
-
 const jwt = require('jsonwebtoken')
 
 module.exports.isAuthenticate = (req,res,next) =>{

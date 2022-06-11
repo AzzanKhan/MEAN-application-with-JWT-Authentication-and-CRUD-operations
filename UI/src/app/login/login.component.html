@@ -1,0 +1,16 @@
+<form class="form-signin" [formGroup]='loginForm' (submit)="login()">
+  <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+  <div class="form-floating">
+    <input class="form-control" id="floatingInput" formControlName="username">
+    <label for="floatingInput">Username</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" formControlName="password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+  <br><br>
+  <p *ngIf="message" class="alert alert-danger alert-dismissible fade show">{{message}}</p>
+</form>
+

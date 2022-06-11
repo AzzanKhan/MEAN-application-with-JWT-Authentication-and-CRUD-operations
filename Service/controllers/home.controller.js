@@ -1,4 +1,3 @@
 module.exports.home = (req,res) => {
-    console.log('home!');
-    res.status(201).json(`Welcome ${req.user}`)
+    res.status(201).json({username : req.user})
 }

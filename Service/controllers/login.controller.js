@@ -20,6 +20,7 @@ module.exports.login = (req,res) => {
                 console.log('user logged in!',user)
                 let token = jwt.sign({username:user.username},'SECRET',{expiresIn:60})
                 res.status(201).json({loggedIn:true,token})
+                console.log(token)
             }
             else{
                 console.log('user login failed!',user)
