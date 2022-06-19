@@ -1,4 +1,4 @@
 GET http://localhost:8000/home
 Content-Type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkF6emFuIEtoYW4iLCJpYXQiOjE2NTQwMjM2ODksImV4cCI6MTY1NDAyMzk4OX0.Yc1hNTbvX-nYYl-OyjipqZhzqgzfvObTKQj1_XrYPL0
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2NTUyMzQ2MzksImV4cCI6MTY1NTIzNDY5OX0.SYwlWZFKbK2s10pVbAVAyva9JgpUUB7uwi9s_7PVILQ
  

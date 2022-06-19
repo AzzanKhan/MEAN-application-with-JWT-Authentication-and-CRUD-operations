@@ -32,11 +32,7 @@ export class RegisterComponent implements OnInit {
     this.registerService.register(formValue.username,formValue.password).subscribe({next:() => {
       this.success = true
     },error : (err) =>{
-      console.log(err)
-      if(err.error.code == 11000)
-        this.errMessage= 'User already exists!! Try something else.'
-      else 
-        this.errMessage= 'Something went wrong!!'
+        this.errMessage= err.error
     }})
   }
 

@@ -9,7 +9,7 @@
     <input type="password" class="form-control" id="floatingPassword" formControlName="password">
     <label for="floatingPassword">Password</label>
   </div>
-  <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+  <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!loginForm.valid">Login</button>
   <br><br>
   <p *ngIf="message" class="alert alert-danger alert-dismissible fade show">{{message}}</p>
 </form>

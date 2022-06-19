@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
+import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private loginService: LoginService,
-    private router:Router
+    private router:Router,
+    private tokenService:TokenService
   ) { }
 
   ngOnInit(): void {
@@ -29,8 +31,8 @@ export class LoginComponent implements OnInit {
   login(){
     const formValue = this.loginForm.value
     this.loginService.login(formValue.username,formValue.password).subscribe({next: (res) => {
-      console.log(res)
-      localStorage.setItem('token',res.token)
+      this.tokenService.storeAccessToken(res.accessToken)
+      this.tokenService.storeRefrshToken(res.refreshToken)
       this.router.navigate(['/'])
     },error : (err)=>{
       this.message='Wrong username or password!!'

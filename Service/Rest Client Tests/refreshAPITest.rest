@@ -1,0 +1,6 @@
+POST http://localhost:8000/refresh
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTUyNzUyMDcsImV4cCI6MTY1NTI3NTUwN30.d4ZgEDCYINGNt-cPUiN9r4gP1uij1Blz9599p4x7PVw"
+}

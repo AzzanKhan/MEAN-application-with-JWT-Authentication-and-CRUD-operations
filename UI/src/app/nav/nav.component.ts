@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Emitter } from '../emitters/auth.emitter';
+import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +11,7 @@ export class NavComponent implements OnInit {
 
   isLoggedIn = false ;
 
-  constructor() { }
+  constructor(private tokenService : TokenService) { }
 
   ngOnInit(): void {
     Emitter.authEmitter.subscribe(res=>{
@@ -19,7 +20,8 @@ export class NavComponent implements OnInit {
   }
 
   logout(){
-    localStorage.removeItem('token')
+    this.tokenService.deleteAccessToken()
+    this.tokenService.deleteRefreshToken()
     Emitter.authEmitter.emit(false)
   }
 

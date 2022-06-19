@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 require('./models/users.model')
 const express = require('express');
 const bodyParser = require('body-parser')
+require('dotenv').config();
 const port = process.env.PORT || "8000";
 const usersRoute = require('./routes/index.js');
 const cors =  require('cors');
@@ -11,7 +12,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const dbURI = 'mongodb://localhost:27017';
+const dbURI = process.env.DB_URI;
 
 mongoose
 	.connect(dbURI, {
@@ -35,7 +36,7 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   res.status(err.status || 500).json({
-    message: "Error Message"
+    message: err.message
   })
 });
 
