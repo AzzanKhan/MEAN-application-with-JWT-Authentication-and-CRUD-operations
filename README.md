@@ -1,1 +1,1 @@
-# JWT-Authentication-for-MEAN-Stack
+# MEAN-Stack-application
