@@ -1,0 +1,30 @@
+POST http://localhost:8000/create
+Content-Type: application/json
+
+{
+    "username": "test1",
+    "password":"badPassword"
+}
+
+###
+GET  http://localhost:8000/read/codewithAzzan
+
+###
+GET  http://localhost:8000/read
+
+###
+PUT http://localhost:8000/update
+Content-Type: application/json
+
+{
+    "username": "codewithAzzan",
+    "nickname":"new nick name"
+}
+
+###
+DELETE http://localhost:8000/delete
+Content-Type: application/json
+
+{
+    "username": "codewithAzzan"
+}

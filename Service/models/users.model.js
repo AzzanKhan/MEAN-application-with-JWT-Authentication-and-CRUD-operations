@@ -6,6 +6,9 @@ var userSchema = new mongoose.Schema({
         unique : true,
         required : true
     },
+    nickname:{
+        type : String,
+    },
     password: {
         type: String,
         required: true
