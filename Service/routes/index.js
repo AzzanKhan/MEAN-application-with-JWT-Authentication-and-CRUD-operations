@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose')
 const User = mongoose.model('User')
-const bcrypt = require('bcrypt-nodejs')
+const bcrypt = require('bcrypt')
 
 const registrationCtrl = require('../controllers/registration.controller');
 const loginCtrl = require('../controllers/login.controller');
