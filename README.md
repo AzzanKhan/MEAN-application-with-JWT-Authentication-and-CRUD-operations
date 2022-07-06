@@ -1,6 +1,6 @@
 # MEAN-Stack-application
 
-![LogoMakr-2Fbcyo]([https://user-images.githubusercontent.com/53059107/177503094-ae70e75d-a913-4ce7-9c7e-276588519350.png](https://codewithazzan.com/))
+![LogoMakr-2Fbcyo](https://user-images.githubusercontent.com/53059107/177503094-ae70e75d-a913-4ce7-9c7e-276588519350.png)
 
 https://codewithazzan.com/
 
