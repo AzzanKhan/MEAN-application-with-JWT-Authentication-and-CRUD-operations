@@ -1,6 +1,6 @@
 # MEAN-Stack-application
 
-![LogoMakr-6lXDDQ](https://user-images.githubusercontent.com/53059107/177375593-0e44e90a-32f2-4b4d-b60a-8052648cf32f.png)
+![LogoMakr-2Fbcyo](https://user-images.githubusercontent.com/53059107/177503094-ae70e75d-a913-4ce7-9c7e-276588519350.png)
 
 For step by step implementation refer the following articles:
 Implementing JWT Authentication in NodeJS : https://codewithazzan.com/jwt-authentication-in-nodejs/
